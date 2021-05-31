@@ -1,0 +1,31 @@
+.gr-container {
+  /* Stablish the grid */
+  display: grid;
+  /* Specify number of columns in the grid */
+  grid-template-columns: 30% 70%;
+
+  /*
+  To specify the gap between columns and rows 
+  column-gap: 1em;
+  row-gap: 1em;
+  */
+  gap: 3px;
+}
+
+/**
+Styles to differentiate container items
+*/
+.gr-container > div {
+  background-color: #eee;
+  padding: 1em;
+}
+
+.gr-container > div:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+}
