@@ -1,0 +1,70 @@
+h1 {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  margin: 0.75em auto;
+}
+
+/* 
+Default grid config
+*/
+
+.grid {
+  max-width: 700px;
+  width: 90%;
+  margin: 20px auto;
+  outline: 2px solid #555;
+  display: grid;
+  /* grid-auto-flow: column; */
+  /* grid-auto-flow: row; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-rows: repeat(4, 1fr); */
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  grid-template-areas:
+    "header header header header header"
+    "main main main sidebar sidebar"
+    "main main main sidebar sidebar"
+    "main main main sidebar sidebar"
+    "main main main sidebar sidebar"
+    "footer footer footer footer footer";
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header" "sidebar" "main" "footer";
+  }
+}
+
+.header,
+.footer,
+.sidebar,
+.main {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header {
+  background-color: midnightblue;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: orange;
+  grid-area: sidebar;
+}
+
+.main {
+  background-color: seagreen;
+  grid-area: main;
+}
+
+.footer {
+  background-color: steelblue;
+  grid-area: footer;
+}
