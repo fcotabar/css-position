@@ -2,14 +2,14 @@ import "./Grid.css";
 import React from "react";
 import { GridItem } from "./GridItem";
 
-export const Grid = () => {
-  const numberOfItems = 6;
+export const Grid = ({ className }) => {
+  const numberOfItems = 12;
   let items = [];
   for (let i = 0; i < numberOfItems; i++) items.push(i + 1);
   console.log(items);
 
   return (
-    <section>
+    <section className={className}>
       <div className="title">
         <h2>Basic grid configuration</h2>
       </div>

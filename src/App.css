@@ -1,6 +1,6 @@
 .App {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .App-header {
@@ -9,20 +9,25 @@
   height: 100px;
   padding-top: 30px;
   text-align: center;
+  min-height: 15vh;
+}
+
+.App-container {
+  min-height: 75vh;
 }
 
 .App-footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   display: block;
   background-color: #282c34;
   color: white;
-  height: 80px;
+  height: 10vh;
   text-align: center;
-  padding-bottom: 20px;
+  padding: 10px;
   width: 100%;
 }
 
 .App-footer h4 {
-  margin: 2em auto;
+  margin: 2rem auto;
 }

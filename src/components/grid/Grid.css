@@ -1,4 +1,5 @@
 .gr-container {
+  padding: 0 1rem;
   /* Stablish the grid */
   display: grid;
   /* Specify number of columns in the grid */
