@@ -3,6 +3,7 @@ import React from "react";
 import "./GridBasic2.css";
 
 export const GridBasic2 = ({ className }) => {
+  console.log(className);
   return (
     <section className={`${className}`}>
       <h1>Grid basic 2</h1>

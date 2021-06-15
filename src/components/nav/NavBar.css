@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  width: 70%;
+  justify-content: flex-start;
+}
+
+.nav__item {
+  background-color: lighten(#282c34, 50%);
+  border-right: 1px white solid;
+  /* flex-grow: 1;
+  padding: 0.75rem; */
+  cursor: pointer;
+}
+
+.nav__item:last-child {
+  border-right: 0;
+}
+
+.nav__link,
+.nav__link:visited,
+.nav__link:link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.2rem 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.nav__link:hover {
+  background-color: darkcyan;
+  text-decoration: underline !important;
+}
+
+.nav__link--selected {
+  text-decoration: underline !important;
+}

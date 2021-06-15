@@ -7,6 +7,7 @@ export const Grid = ({ className }) => {
   let items = [];
   for (let i = 0; i < numberOfItems; i++) items.push(i + 1);
   console.log(items);
+  console.log(className);
 
   return (
     <section className={className}>

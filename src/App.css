@@ -6,7 +6,10 @@
 .App-header {
   background-color: #282c34;
   color: white;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100px; */
   padding-top: 30px;
   text-align: center;
   min-height: 15vh;
